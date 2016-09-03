@@ -1,5 +1,5 @@
-## Those pair of functions below are used to create 
-## a special object that stores a matrix and caches its inverse
+## Those pair of functions "makeCacheMatrix and cacheSolve" below are used to create 
+## a special object 'x' that stores a matrix and caches its inverse
 
 ## the function below creates a special matrix object 
 ## that can cache its inverse
@@ -30,7 +30,7 @@ cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv<-x$getInverse()
   if(!is.null(inv)){
-    message("getting cached data")
+    message("retrieving cached data")
     return(inv)
   }
   mat<-x$get()
